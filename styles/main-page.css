@@ -1,6 +1,6 @@
 .description{
-    grid-column: 3 span;/*todo */
     grid-row: 3 span;
+    grid-column: 3 span;
     padding: 10%;
 }
 .description a {
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     font-family: "PT Sans", sans-serif;
-    font-size: var(--question-title);
+    font-size: var(--img-title);
     font-weight: bold;
     border-bottom: gray 1px solid;
 }
@@ -43,11 +43,16 @@
 }
 
 
-
 /* Desktop */
 @media (min-width: 1601px){
-
-
+    body{
+        --description-title: 1.7vw;
+        --plain-text: 1.1vw;
+        --question-title: 1.7vw;
+    }
+    .questions{
+        grid-column: 4/10;
+    }
 }
 
 /* Laptop */
@@ -55,7 +60,7 @@
     body{
         --description-title: 15pt;
         --plain-text: 12pt;
-        --question-title: 19pt;
+        --question-title: 20pt;
     }
     .questions{
         grid-column: 4/10;
@@ -64,12 +69,12 @@
 }
 
 /* Tablet */
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 801px) and (max-width: 1199px){
 
     body{
-        --description-title: 12pt;
-        --plain-text: 10pt;
-        --question-title: 16pt;
+        --description-title: 36pt;
+        --plain-text: 20pt;
+        --question-title: 32pt;
     }
 
     .questions{
@@ -82,13 +87,18 @@
 /* Phone */
 @media (max-width: 800px) and (orientation: portrait){
     body{
-        --description-title: 10pt;
-        --plain-text: 8pt;
-        --question-title: 12pt;
+        --description-title: 6vw;
+        --plain-text: 3.7vw;
+        --question-title: 5.5vw;
     }
-
+    .main-div{
+        width: 100%;
+    }
     .questions{
         grid-column-start: 3 span;
+    }
+    .description {
+        grid-row: 2 span;
     }
 }
 

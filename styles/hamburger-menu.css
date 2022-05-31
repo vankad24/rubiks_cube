@@ -1,24 +1,19 @@
 .container{
     padding-left: 20px;
-    /*display: inline-block;
-    position: relative;
-    top: 15px;*/
-    /*left: 10px;*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     z-index: 11;
-
 }
 #hamburger{
-    width: 31px;
-    height: 20px;
+    width: calc(31px * var(--burger-ratio));
+    height: calc(20px * var(--burger-ratio));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    transform-origin: 14px 10px;
+    transform-origin: calc(14px * var(--burger-ratio)) calc(10px * var(--burger-ratio));
     transform: rotate(0deg);
     z-index: 1;
 }
@@ -28,20 +23,20 @@
     opacity: 0;
     margin: 0;
     display: block;
-    width: 31px;
-    height: 22px;
+    width: calc(31px * var(--burger-ratio));
+    height: calc(20px * var(--burger-ratio));
     z-index: 2;
 }
 #hamburger>div{ /*all*/
     width: 100%;
-    height: 4px;
+    height: calc(4px*var(--burger-ratio));
 
-    border-radius: 3px;
+    border-radius: calc(3px * var(--burger-ratio));
     background: #5c5c5c;/*normal*/
-    transform-origin: 0 2px;
+    transform-origin: 0 calc(2px * var(--burger-ratio));
     transition: opacity 0.55s ease,
-    transform 0.4s ease-in-out,
-    background .5s ease-in;
+        transform 0.4s ease-in-out,
+        background .5s ease-in;
 }
 #toggle:checked~.rotator>#hamburger>div{
     background: #777;/*clicked*/
@@ -51,14 +46,14 @@
 }
 /*Make cross*/
 #toggle:checked~.rotator>#hamburger>div:nth-child(1){
-    transform: rotate(45deg) translateY(-4.2px);
+    transform: rotate(45deg) translateY(calc(-4.2px * var(--burger-ratio)));
 }
 #toggle:checked~.rotator>#hamburger>div:nth-child(2){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 #toggle:checked~.rotator>#hamburger>div:nth-child(3){
-    transform: rotate(-45deg) translateY(4.2px);
+    transform: rotate(-45deg) translateY(calc(4.2px * var(--burger-ratio)));
 }
 /*Rotate cross*/
 #toggle:checked~.rotator>#hamburger{
@@ -69,7 +64,7 @@
 }
 /*different size effect*/
 .rotator{
-    transform-origin: 14px 10px;
+    transform-origin: calc(14px * var(--burger-ratio)) calc(10px * var(--burger-ratio));
     transform: rotate(180deg);
 }
 #toggle:checked~.rotator{
@@ -88,7 +83,7 @@
     height: 100vmax;
     list-style: none;
     background: white;
-    padding: 70px 35px 22px 25px;
+    padding: 100px 35px 22px 25px;
 
     transform: translateX(-100%);
     transition: transform 0.5s ease;
@@ -101,11 +96,11 @@
 .menu a{
     color: black;
     font-family: 'PT Sans', sans-serif;
-    font-size: 19px;
+
     text-decoration: none;
 
     padding: 3px 14px;
-    border-radius: 16px;
+    border-radius: 60px;
     /*background: #797979;*/
     transition: background .5s ease;
 }
@@ -131,4 +126,34 @@
 #fog.show{
     z-index: 11;
     opacity: .6;
+}
+
+
+/* Desktop */
+@media (min-width: 1601px){
+    .container{
+        --burger-ratio: 1.7;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1200px) and (max-width: 1600px){
+    .container{
+        --burger-ratio: 1;
+    }
+}
+
+/* Tablet */
+@media (min-width: 801px) and (max-width: 1199px){
+    .container{
+        --burger-ratio: 1.5;
+    }
+}
+
+
+/* Phone */
+@media (max-width: 800px) and (orientation: portrait){
+    .container{
+        --burger-ratio: 2;
+    }
 }
