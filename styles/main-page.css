@@ -34,19 +34,69 @@
     font-size: var(--plain-text);
     font-style: italic;
 }
-
 .grid-container a{
     grid-column: 3 span;
     grid-row: 3 span;
 }
 .grid-container .text{
-    grid-column-start: 12 span;
+    grid-column-start: var(--columns) span;
 }
-.questions{
-    grid-column: 4/10;
+
+
+
+/* Desktop */
+@media (min-width: 1601px){
+
+
 }
-body{
-    --description-title: 15pt;
-    --plain-text: 12pt;
-    --question-title: 19pt;
+
+/* Laptop */
+@media (min-width: 1200px) and (max-width: 1600px){
+    body{
+        --description-title: 15pt;
+        --plain-text: 12pt;
+        --question-title: 19pt;
+    }
+    .questions{
+        grid-column: 4/10;
+    }
+
 }
+
+/* Tablet */
+@media (min-width: 800px) and (max-width: 1200px){
+
+    body{
+        --description-title: 12pt;
+        --plain-text: 10pt;
+        --question-title: 16pt;
+    }
+
+    .questions{
+        grid-column-start: 6 span;
+    }
+
+}
+
+
+/* Phone */
+@media (max-width: 800px) and (orientation: portrait){
+    body{
+        --description-title: 10pt;
+        --plain-text: 8pt;
+        --question-title: 12pt;
+    }
+
+    .questions{
+        grid-column-start: 3 span;
+    }
+}
+
+/*
+@media (max-width: 800px) and (orientation: landscape){
+    body{
+        color: green!important;
+    }
+}
+*/
+
