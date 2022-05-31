@@ -1,0 +1,132 @@
+@font-face{
+    font-family: "PT Sans";
+    src: url("../assets/fonts/PTSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url("../assets/fonts/Merriweather-Regular.ttf");
+}
+.title p{
+    font-family: PT Sans, sans-serif;
+    font-size: 64pt;
+    font-weight: bold;
+}
+.description{
+    grid-column: 6 span;
+    grid-row: 2 span;
+}
+.description p{
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 45px;
+}
+.description a:link{
+    font-size: 24pt;
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.description a:visited{
+    font-size: 24pt;
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.description a:hover{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    font-size: 26pt;
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    color: #2339be;
+}
+.description a:active{
+    font-size: 24pt;
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+    color: #e33a3a;
+}
+.description p:last-child{
+    font-size: 12pt;
+    font-family: PT Sans, sans-serif;
+}
+
+.grid-container>a{
+    grid-column: 6 span;
+    grid-row: 3 span;
+}
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*color: white;*/
+    font-size: 2.5vw;
+    font-family: Arial,sans-serif;
+}
+.hidden{
+    visibility: hidden;
+    grid-column: 1/-1;
+    grid-row: 1 span;
+}
+/*.grid-container>a:hover{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    grid-column: 3 span;
+    grid-row: 3 span;
+}*/
+
+/*.grid-container .text{
+    grid-column-start: 12 span;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: PT Sans, sans-serif;
+    font-size: 19pt;
+    font-weight: bold;
+    border-bottom: gray 1px solid;
+}*/
+
+/*.grid-container img{
+    grid-column-start: 3 span;
+    grid-row-start: 2 span;
+}
+.questions{
+    grid-column: 4/10;
+    grid-row-start: 2 span;
+    text-align: center;
+}
+.questions>:first-child{
+    font-family: PT Sans, sans-serif;
+    font-size: 19pt;
+    font-weight: bold;
+}
+.questions>:last-child{
+    font-family: Merriweather, sans-serif;
+    font-size: 11pt;
+    font-style: italic;
+}*/
+
+footer>a>p{
+    font-family: PT Sans, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+}
+footer>a>p:hover{
+    font-family: PT Sans, sans-serif;
+    font-size: 15pt;
+    color: #2339be;
+}
+
+footer>p:nth-child(2){
+    font-family: Merriweather, sans-serif;
+    font-size: 11pt;
+    line-height: 2;
+}
+footer>p:last-child{
+    font-family: PT Sans, sans-serif;
+    font-size: 10pt;
+}

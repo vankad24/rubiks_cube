@@ -1,0 +1,134 @@
+.container{
+    padding-left: 20px;
+    /*display: inline-block;
+    position: relative;
+    top: 15px;*/
+    /*left: 10px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 11;
+
+}
+#hamburger{
+    width: 31px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform-origin: 14px 10px;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+/*Toggle-button*/
+#toggle{
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    display: block;
+    width: 31px;
+    height: 22px;
+    z-index: 2;
+}
+#hamburger>div{ /*all*/
+    width: 100%;
+    height: 4px;
+
+    border-radius: 3px;
+    background: #5c5c5c;/*normal*/
+    transform-origin: 0 2px;
+    transition: opacity 0.55s ease,
+    transform 0.4s ease-in-out,
+    background .5s ease-in;
+}
+#toggle:checked~.rotator>#hamburger>div{
+    background: #777;/*clicked*/
+}
+#hamburger>div:nth-child(2){
+    transform-origin: initial;
+}
+/*Make cross*/
+#toggle:checked~.rotator>#hamburger>div:nth-child(1){
+    transform: rotate(45deg) translateY(-4.2px);
+}
+#toggle:checked~.rotator>#hamburger>div:nth-child(2){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#toggle:checked~.rotator>#hamburger>div:nth-child(3){
+    transform: rotate(-45deg) translateY(4.2px);
+}
+/*Rotate cross*/
+#toggle:checked~.rotator>#hamburger{
+    transition: transform 0.3s ease-in 0.3s;
+}
+#toggle:checked:hover~.rotator>#hamburger{
+    transform: rotate(90deg);
+}
+/*different size effect*/
+.rotator{
+    transform-origin: 14px 10px;
+    transform: rotate(180deg);
+}
+#toggle:checked~.rotator{
+    transform: rotate(0deg);
+}
+
+/*----------menu------------*/
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 100vmax;
+    list-style: none;
+    background: white;
+    padding: 70px 35px 22px 25px;
+
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    border-bottom-right-radius: 5px;
+}
+.menu li{
+    margin: 6px 10px;
+}
+
+.menu a{
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+
+    padding: 3px 14px;
+    border-radius: 16px;
+    /*background: #797979;*/
+    transition: background .5s ease;
+}
+.menu a:hover{
+    background: #e8e8e8;
+}
+
+#toggle:checked~.menu{
+    transform: none;
+}
+
+#fog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vmax;
+    background: black;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-out, z-index 1s cubic-bezier(0.12, 0.5, 0.49, 0.49);
+}
+#fog.show{
+    z-index: 11;
+    opacity: .6;
+}

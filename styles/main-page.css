@@ -1,0 +1,52 @@
+.description{
+    grid-column: 3 span;/*todo */
+    grid-row: 3 span;
+    padding: 10%;
+}
+.description a {
+    font-size: var(--description-title);
+}
+.description p:last-child{
+    font-size: var(--plain-text);
+    font-family: Merriweather, sans-serif;
+    line-height: 1.7;
+}
+.grid-container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--question-title);
+    font-weight: bold;
+    border-bottom: gray 1px solid;
+}
+.questions{
+    grid-row-start: 2 span;
+    text-align: center;
+}
+.questions>:first-child{
+    font-family: PT Sans, sans-serif;
+    font-size: var(--question-title);
+    font-weight: bold;
+}
+.questions>:last-child{
+    font-family: Merriweather, sans-serif;
+    font-size: var(--plain-text);
+    font-style: italic;
+}
+
+.grid-container a{
+    grid-column: 3 span;
+    grid-row: 3 span;
+}
+.grid-container .text{
+    grid-column-start: 12 span;
+}
+.questions{
+    grid-column: 4/10;
+}
+body{
+    --description-title: 15pt;
+    --plain-text: 12pt;
+    --question-title: 19pt;
+}
