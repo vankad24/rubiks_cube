@@ -154,6 +154,6 @@
 /* Phone */
 @media (max-width: 800px) and (orientation: portrait){
     .container{
-        --burger-ratio: 2;
+        --burger-ratio: 1.5;
     }
 }
