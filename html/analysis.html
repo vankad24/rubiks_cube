@@ -6,13 +6,12 @@
     <link rel="stylesheet" href="../styles/main-grid.css" type="text/css">
     <link rel="stylesheet" href="../styles/main-page.css" type="text/css">
     <link rel="stylesheet" href="../styles/hamburger-menu.css" type="text/css">
+    <link rel="stylesheet" href="../styles/analysis.css" type="text/css">
     <link rel="shortcut icon" href="../assets/img/icon.png">
 
     <title>Solve Rubik</title>
 </head>
 <body>
-<!--    <input type="button" value="Hello">-->
-<!--    <div id="test">123</div>-->
     <div class="main-div">
 
         <header>
@@ -43,46 +42,15 @@
         </div>
         <div class="grid-container">
 
-            <div class="text">Головоломки для всех</div>
+            <form action="#">
+                <label for="algorithm">Ваш алгоритм:</label>
+                <input type="text" name="algorithm" id="algorithm">
 
-            <a href="#" id="cube">
-                <img src="../assets/img/main_1.jfif" alt="">
-            </a>
-            <div class="description">
-                <p><a href="#">Материалы</a></p>
-                <p>Научись собирать головоломки</p>
-            </div>
-
-            <a href="#">
-                <img src="../assets/img/main_2.png" alt="">
-            </a>
-            <div class="description">
-                <p><a href="#">Магазины</a></p>
-                <p>Где купить головоломки по самым привлекательным ценам</p>
-            </div>
-
-            <a href="#">
-                <img src="../assets/img/main_3.png" alt="">
-            </a>
-            <div class="description">
-                <p><a href="#">Анализ алгоритмов</a></p>
-                <p>Как собрать по-другому?</p>
-            </div>
-
-            <a href="#">
-                <img src="../assets/img/main_4.png" alt="">
-            </a>
-            <div class="description">
-                <p><a href="#">Гайды</a></p>
-                <p>Полезные ссылки для прокачки твоих скилов</p>
-            </div>
-
-            <div class="hidden" style="grid-column: 1/-1; grid-row: 1 span"></div>
-
-            <div class="questions">
-                <p>Возникли вопросы?</p>
-                <p>По всем вопросам и предложениям обращайтесь к нам по адресу <a href="mailto:smth@mail.com">smth@mail.com</a></p>
-            </div>
+                <div class="out">
+                    <div class="alg-type">Для левой руки</div>
+                    <div class="result">RQRVRQV</div>
+                </div>
+            </form>
 
         </div>
         <hr>
@@ -102,5 +70,6 @@
 
     <!--  scripts  -->
     <script src="../js/script.js"></script>
+    <script src="../js/analysis.js"></script>
 </body>
 </html>

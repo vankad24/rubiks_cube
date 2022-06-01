@@ -1,0 +1,17 @@
+form{
+    grid-column: 1/-1;
+}
+label{
+    font-size: var(--description-title);
+}
+label>input{
+    width: 100%;
+}
+
+
+
+
+
+label{
+    grid-column: 3/10;
+}
