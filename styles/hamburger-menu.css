@@ -137,14 +137,14 @@
 }
 
 /* Laptop */
-@media (min-width: 1200px) and (max-width: 1600px){
+@media (min-width: 1201px) and (max-width: 1600px){
     .container{
         --burger-ratio: 1;
     }
 }
 
 /* Tablet */
-@media (min-width: 801px) and (max-width: 1199px){
+@media (min-width: 801px) and (max-width: 1200px){
     .container{
         --burger-ratio: 1.5;
     }
@@ -152,7 +152,7 @@
 
 
 /* Phone */
-@media (max-width: 800px) and (orientation: portrait){
+@media (max-width: 800px){
     .container{
         --burger-ratio: 1.5;
     }
