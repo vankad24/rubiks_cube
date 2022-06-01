@@ -42,6 +42,11 @@
     grid-column-start: var(--columns) span;
 }
 
+body{
+    --description-title: 36pt;
+    --plain-text: 20pt;
+    --question-title: 32pt;
+}
 
 /* Desktop */
 @media (min-width: 1601px){
@@ -56,7 +61,7 @@
 }
 
 /* Laptop */
-@media (min-width: 1200px) and (max-width: 1600px){
+@media (min-width: 1201px) and (max-width: 1600px){
     body{
         --description-title: 15pt;
         --plain-text: 12pt;
@@ -69,7 +74,7 @@
 }
 
 /* Tablet */
-@media (min-width: 801px) and (max-width: 1199px){
+@media (min-width: 801px) and (max-width: 1200px){
 
     body{
         --description-title: 36pt;
@@ -85,7 +90,7 @@
 
 
 /* Phone */
-@media (max-width: 800px) and (orientation: portrait){
+@media (max-width: 800px) /*and (orientation: portrait)*/{
     body{
         --description-title: 6vw;
         --plain-text: 3.7vw;
@@ -101,12 +106,3 @@
         grid-row: 2 span;
     }
 }
-
-/*
-@media (max-width: 800px) and (orientation: landscape){
-    body{
-        color: green!important;
-    }
-}
-*/
-
