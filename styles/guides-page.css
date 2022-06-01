@@ -1,0 +1,56 @@
+.youtube-video{
+    /*overflow: hidden;*/
+    grid-column: 6 span;
+    grid-row: 4 span;
+}
+.youtube-video div{
+    font-size: var(--description-title);
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+.youtube-video iframe{
+    width: 100%;
+    height: 90%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+/* Desktop */
+@media (min-width: 1601px){
+    body{
+        --img-title: 7.6vw;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1201px) and (max-width: 1600px){
+    body{
+        --description-title: 20pt;
+        --img-title: 64pt;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 801px) and (max-width: 1200px){
+    body{
+        --img-title: 75pt;
+    }
+}
+
+/* Phone */
+@media (max-width: 800px){
+    body{
+        --img-title: 75pt;
+    }
+    .youtube-video{
+        grid-column: 3 span;
+        grid-row: 3 span;
+        overflow: hidden;
+    }
+    .youtube-video iframe{
+        padding: 0 0 30% 0;
+    }
+
+}

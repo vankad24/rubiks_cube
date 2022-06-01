@@ -89,6 +89,9 @@
     transition: transform 0.5s ease;
     border-bottom-right-radius: 5px;
 }
+.menu ul{
+    list-style: none;
+}
 .menu li{
     margin: 6px 10px;
 }

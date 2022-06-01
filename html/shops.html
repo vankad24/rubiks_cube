@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../styles/main-grid.css" type="text/css">
-        <link rel="stylesheet" href="../styles/shops-page.css" type="text/css">
-        <link rel="shortcut icon" href="../assets/img/icon.png">
-        <title>Rubik's cube</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="../styles/hamburger-menu.css" type="text/css">
+    <link rel="stylesheet" href="../styles/main-page.css" type="text/css">
+    <link rel="stylesheet" href="../styles/main-grid.css" type="text/css">
+    <link rel="stylesheet" href="../styles/shops-page.css" type="text/css">
+    <link rel="shortcut icon" href="../assets/img/icon.png">
+    <title>Rubik's cube</title>
+</head>
+<body>
     <div class="main-div">
         <header>
+            <div id="fog"></div>
+            <div class="container">
+                <input type="checkbox" id="toggle">
+                <ul class="menu">
+                    <!--From menu.html file-->
+                </ul>
+                <div class="rotator">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
             <img src="../assets/img/icon.png" alt="">
-            Cubes
+            <div>Cubes</div>
         </header>
         <div class="title-img">
             <div></div>
@@ -20,28 +37,23 @@
             </div>
         </div>
         <div class="grid-container">
-
-            <a href="#" id="cube">
+            <a href="https://cccstore.ru/">
                 <img src="../assets/img/cccstore.png" alt="">
             </a>
 
-            <a href="#">
+            <a href="https://aliexpress.ru/">
                 <img src="../assets/img/aliexpress.jpeg" alt="">
             </a>
 
             <div class="description">
-                <p><a href="#">cccstore.ru</a></p>
+                <p><a href="https://cccstore.ru/">cccstore.ru</a></p>
                 <p>Все необходимое для спидкубинга</p>
             </div>
 
-
             <div class="description">
-                <p><a href="#">aliexpress.ru</a></p>
+                <p><a href="https://aliexpress.ru/">aliexpress.ru</a></p>
                 <p>Любые головоломки из Китая</p>
             </div>
-
-            <div class="hidden"></div>
-
         </div>
         <hr>
         <footer>
@@ -50,13 +62,14 @@
                 <p>(CC BY-SA 4.0)</p>
             </a>
             <p>
-                smth@mail.ru   |   г. Иркутск, ул. Лермонтова 124, 4 этаж<br>
+                smth@mail.ru | г. Иркутск, ул. Лермонтова 124, 4 этаж<br>
                 Все права не защищены.
             </p>
             <p>© RubiksCube И. Д. Донмоняк, 2022</p>
         </footer>
 
     </div>
+
     <script src="../js/script.js"></script>
-    </body>
+</body>
 </html>

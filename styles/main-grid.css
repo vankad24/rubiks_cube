@@ -189,8 +189,8 @@ body{
         --footer-text: 20pt;
         --columns: 6;
         --gap: 5px;
-        --column-width: 15vw;
-        --side-gap: 10px;
+        --column-width: 14vw;
+        --side-gap: 4vw;
         --title-img-height: 30vh;
         --img-border: 40px;
         --header-hight: 80px;

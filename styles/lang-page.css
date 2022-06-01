@@ -1,0 +1,43 @@
+.text1{
+    padding: 30px;
+    font-size: var(--description-title);
+    font-family: "PT Sans", sans-serif;
+}
+
+
+/* Desktop */
+@media (min-width: 1601px){
+    body{
+        --img-title: 7.6vw;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1201px) and (max-width: 1600px){
+    body{
+        --description-title: 20pt;
+        --img-title: 64pt;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 801px) and (max-width: 1200px){
+    body{
+        --img-title: 75pt;
+    }
+}
+
+
+/* Phone */
+@media (max-width: 800px){
+    body{
+        --img-title: 75pt;
+    }
+    .title-img>.title{
+        text-align: center;
+    }
+
+
+}

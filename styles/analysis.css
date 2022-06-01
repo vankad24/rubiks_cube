@@ -1,17 +1,97 @@
-form{
-    grid-column: 1/-1;
-}
-label{
+.grid-container{
     font-size: var(--description-title);
+    font-family: "PT Sans", sans-serif;
 }
-label>input{
+input{
+    font-size: var(--description-title);
+    font-family: "PT Sans", sans-serif;
+    height: fit-content;
+}
+.in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.out{
+    text-align: center;
+    grid-column: 3 span;
+}
+.alg-type{
+    font-family: 'Merriweather', sans-serif;
+}
+.result{
+    font-size: var(--plain-text);
+    background: #b5b5b5;
+    border-radius: 50px;
+    padding: .2em 0;
+    min-height: 1em;
+}
+
+input[type="button"]{
+    height: 40%;
     width: 100%;
+    background: #b5b5b5;
+    border-radius: 50px;
+    font-size: var(--plain-text);
+}
+input[type="button"]:hover{
+    background: #9d9d9d;
 }
 
+/* Desktop */
+@media (min-width: 1601px){
+    .in{
+        grid-column: 4/10;
+    }
+    .hidden~.out:nth-child(odd){
+        grid-column: 4/3 span;
+    }
+    input[type="button"]{
+        grid-column: 6/8;
+    }
+}
 
+/* Laptop */
+@media (min-width: 1201px) and (max-width: 1600px){
+    .in{
+        grid-column: 4/10;
+    }
+    .hidden~.out:nth-child(odd){
+        grid-column: 4/3 span;
+    }
+    input[type="button"]{
+        grid-column: 6/8;
+    }
+}
 
+/* Tablet */
+@media (min-width: 801px) and (max-width: 1200px){
+    .in{
+        grid-column: 1/-1;
+    }
+    .hidden{
+        grid-column: 1/-1;
+    }
+    .out{
+        font-size: var(--plain-text);
+    }
+    input[type="button"]{
+        grid-column: 3/5;
+    }
+}
 
-
-label{
-    grid-column: 3/10;
+/* Phone */
+@media (max-width: 800px){
+    .in{
+        grid-column: 1/-1;
+    }
+    .hidden{
+        grid-column: 1/-1;
+    }
+    .out{
+        font-size: var(--plain-text);
+    }
+    input[type="button"]{
+        grid-column: 2;
+    }
 }
