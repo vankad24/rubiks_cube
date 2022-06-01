@@ -44,41 +44,290 @@
 
             <div class="grid-container">
 
-                <div class="text">1 этап - сборка правильного креста</div>
-
-
-                <div class="description">
-                    <a href="#" id="cube">
-                        <img src="../assets/img/main_1.jfif" alt="">
-                    </a>
-                    <p>Правильный крест</p>
+                <div class="step">
+                    1 этап - сборка правильного креста
                 </div>
 
-                <div class="hidden" style="grid-column: 3 span; grid-row: 3 span"></div>
-                <div class="description">
-                    <a href="shops.html">
-                        <img src="../assets/img/main_2.png" alt="">
-                    </a>
-                    <p>R</p>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/1.png" alt="">
+                    <div>Правильный крест</div>
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/2.png" alt="">
+                    <div>Неправильный крест</div>
+                </div>
+
+                <div class="explanation">
+                    Для удобства будем ставить элементы креста по одному. Для начала ставим белый центр наверх
+                    и на кубике находим 4 ребра с белым цветом: бело-красное, бело-оранжевое, бело-синее и бело-зеленое.
+                    После этого выбираем любое, его мы и будем ставить первым. У нас может возникнуть несколько
+                    ситуаций, каждая из которых рассмотрена на картинках ниже.
+                    Если ребро стоит в среднем слое, то просто движениями R или L' ставим их к белому центру.
+                    Но это место может оказаться уже занято другим ребром с белым цветом, поэтому мы должны
+                    отвести его в сторону при помощи поворотов U, U' или U2 и поставить нужное нам ребро
+                    уже знакомыми поворотами R или L'.
+                    Если же ребро окажется на верхнем или нижнем слое, то движениями F или F' ставим их
+                    в средний слой и делаем R или L', как и до этого.
+                    Также ребро может оказаться в нижнем слое и белым цветом смотреть вниз. В таком случае
+                    ставим свободное место наверху над ним и поднимаем ребро движением F2.
+                    Таким образом нужно поставить к белому центру все 4 ребра.
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/3.png" alt="">
+                    <div>R</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/4.png" alt="">
+                    <div>L'</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/5.png" alt="">
+                    <div>U, U' или U2 + R</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/6.png" alt="">
+                    <div>U, U' или U2 + L'</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/7.png" alt="">
+                    <div>F R или F' L'</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/8.png" alt="">
+                    <div>F' R или F L'</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/9.png" alt="">
+                    <div>F2</div>
+                </div>
+
+                <div class="explanation">
+                    Поставив 4 ребра к своему центру, мы получим крест. Он может уже сейчас оказаться правильным,
+                    но в большинстве случаев этого не происходит, поэтому нужно эти ребра поменять между собой местами,
+                    чтобы он стал правильным.
+                    Крутим верхний слой, пока 2 ребра не будут совпадать по цвету с центрами. Здесь может быть
+                    2 ситуации: совпадают смежные ребра и нужно поменять местами 2 других или же совпадают
+                    противоположные ребра и нужно поменять местами оставшиеся. Оба случая рассмотрены на картинках ниже.
+                    На данном этапе нужно запомнить простой алгоритм R U R' U', называемый пиф-пафом, он еще окажется
+                    нам полезен.
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/10.png" alt="">
+                    <div>(R U R' U') R | Запоминаем: R U R' U' - пиф-паф</div>
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/11.png" alt="">
+                    <div>R U2 R' U2 R</div>
+                </div>
+
+                <div class="step">
+                    2 этап - сборка первого слоя
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/12.png" alt="">
+                    <div>Собранный первый слой</div>
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/13.png" alt="">
+                    <div>Собранный первый слой</div>
+                </div>
+
+                <div class="explanation">
+                    Находим один из четырех белых углов, находим место на нижнем слое, где этот уголок должен
+                    находиться (например, бело-красно-синий уголок должен стоят между синим и красным элементами креста),
+                    ставим найденный уголок над этим местом. Ниже рассмотрены все случаи, которые могут выпасть на
+                    данном этапе. Выполнив алгоритм, мы поставим уголок на свое место. Подобным образом ставим оставшиеся
+                    три. Обращаем ваше внимание на случаи, когда белый угол находится не на верхнем слое, а внизу.
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/14.png" alt="">
+                    <div>5 пиф-пафов</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/15.png" alt="">
+                    <div>1 пиф-паф</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/16.png" alt="">
+                    <div>3 пиф-пафа</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/17.png" alt="">
+                    <div>4 пиф-пафа</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/18.png" alt="">
+                    <div>2 пиф-пафа</div>
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/19.png" alt="">
+                    <div>Пиф-паф и одна из ситуаций</div>
                 </div>
 
 
-                <div class="description">
-                    <a href="#">
-                        <img src="../assets/img/main_3.png" alt="">
-                    </a>
-                    <p>L'</p>
+                <div class="step">
+                    3 этап - сборка второго слоя
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/20.png" alt="">
+                    <div>Собранный второй слой</div>
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/21.png" alt="">
+                    <div>Собранный второй слой</div>
+                </div>
+                <div class="explanation">
+                    Как уже было сказано выше, находим 4 ребра без желтого цвета. Выбираем на верхнем
+                    слое одно, которое будем ставить первым, и крутим верхнюю грань до тех пор, пока
+                    одна из наклеек этого ребра не совпадет по цвету с центром. Далее получаем одну из
+                    ситуаций. Как и в предыдущем этапе, элементы могу оказаться не на верхнем слое, а
+                    ниже, эти ситуации также рассмотрены.
                 </div>
 
 
-                <div class="description">
-                    <a href="#">
-                        <img src="../assets/img/main_3.png" alt="">
-                    </a>
-                    <p>L'</p>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/22.png" alt="">
+                    <div>U R U' R' F R' F' R</div>
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/23.png" alt="">
+                    <div>U' L' U L F' L F L'</div>
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/24.png" alt="">
+                    <div>“Направо” U2 “Направо”</div>
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/25.png" alt="">
+                    <div>“Направо” и одна из первых двух ситуаций</div>
                 </div>
 
+                <div class="step">
+                    4 этап - сборка желтого креста
+                </div>
 
+                <div class="solution">
+                    <img src="../assets/img/beginner/26.png" alt="">
+                    <div>F R U R' U' F'</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/27.png" alt="">
+                    <div>F U R U' R' F'</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/28.png" alt="">
+                    <div>“Палка” U2 “Галка”</div>
+                </div>
+
+                <div class="step">
+                    5 этап - сборка желтой стороны
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/30.png" alt="">
+                    <div>R U R' U R U2 R'</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/31.png" alt="">
+                    <div>R U2 R' U' R U' R'</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/32.png" alt="">
+                    <div>“Л.рыбка” U' “П.рыбка”</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/33.png" alt="">
+                    <div>“Л.рыбка” U “П.рыбка”</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/34.png" alt="">
+                    <div>“Л.рыбка” U2 “П.рыбка”</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/35.png" alt="">
+                    <div>“П.рыбка” 2 раза</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/36.png" alt="">
+                    <div>“П.рыбка” U’ “П.рыбка”</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/37.png" alt="">
+                    <div>Рузультат</div>
+                </div>
+
+                <div class="step">
+                    6 этап - сборка углов верхнего слоя
+                </div>
+
+                <div class="solution half">
+                    <img src="../assets/img/beginner/38.png" alt="">
+                    <div>R2 D2 R U R' D2 R U' R</div>
+                </div>
+                <div class="solution half">
+                    <img src="../assets/img/beginner/39.png" alt="">
+                    <div>“Глаза справа” два раза или R' U R' D2 R U' R' D2 R2</div>
+                </div>
+
+                <div class="explanation">
+                    Выбираем любой уголок и движениями U, U' и U2 ставим его на свое место, чтобы оба цвета
+                    угла совпали с двумя цветами на нижних слоях. В зависимости от полученной ситуации, делаем
+                    один из алгоритмов. Обращаем внимание, что они делаюся из другого положения, поэтому нужно
+                    взять кубик белым цветом к себе.
+                </div>
+
+                <div class="explanation">
+                    Могут возникнуть 2 дополнительные ситуации:
+                    1. Уголок встал на свое место, но рядом с ним на свое место встал еще один. Продолжаем
+                    крутить верхнюю грань, следя теперь за другим несобранным уголком. Он уже встанет так,
+                    как нужно в первых двух ситуациях.
+                    2. Уголок встал на свое место, но по диагонали на свое место встал еще один.
+                    Берем кубик белым цветом к себе и делаем алгоритм “Глаза справа”. Выбираем любой
+                    уголок и ставим его на своё место. Теперь уже всё получится так, как нужно для первых
+                    двух ситуаций.
+                </div>
+
+                <div class="step">
+                    7 этап - сборка ребер верхнего слоя
+                </div>
+
+                <div class="solution">
+                    <img src="../assets/img/beginner/40.png" alt="">
+                    <div>R U' R U R U R U’ R’ U’ R2 - Треугольник</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/41.png" alt="">
+                    <div>Треугольник 2 раза</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/42.png" alt="">
+                    <div>Треугольник U’ Треугольник</div>
+                </div>
+                <div class="solution">
+                    <img src="../assets/img/beginner/43.png" alt="">
+                    <div>Треугольник U Треугольник</div>
+                </div>
+
+                <div class="step">
+                    Поздравляем! Вы собрали куб и близитесь к майнкрафту!
+                </div>
             </div>
             <hr>
             <footer>

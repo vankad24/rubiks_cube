@@ -214,10 +214,10 @@ body{
         --footer-text: 3.1vw;
         --columns: 3;
         --gap: 0px;
-        --column-width: 23vw;
+        --column-width: 27vw;
         --side-gap: 0px;
         --title-img-height: 37vh;
-        --img-border: 0px;
+        --img-border: 6%;
         --header-hight: 120px;
         --menu-text: 6vw;
     }
